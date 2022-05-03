@@ -232,7 +232,7 @@ extension CameraView: AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAud
           lastFrameProcessorCall = DispatchTime.now()
         } else {
           // we're still in the middle of executing a Frame Processor for a previous frame, so a frame was dropped.
-          ReactLogger.log(level: .warning, message: "The Frame Processor took so long to execute that a frame was dropped.")
+          // ReactLogger.log(level: .warning, message: "The Frame Processor took so long to execute that a frame was dropped.")
         }
       }
 
